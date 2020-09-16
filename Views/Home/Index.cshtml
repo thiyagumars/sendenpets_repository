@@ -1,0 +1,113 @@
+﻿
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div style=" background-color :lightgray;width :inherit ;height :inherit">
+    <div class="col-md-9" style="width :inherit;height :inherit;border:thiCK;border-color:black;background-color:white">
+        <div id="imageCarousel" class="carousel slide" data-interval="1500"
+             data-ride="carousel" data-pause="hover" data-wrap="true">
+
+            <ol class="carousel-indicators">
+                <li data-target="#imageCarousel" data-slide-to="0"></li>
+                <li data-target="#imageCarousel" data-slide-to="1"></li>
+                <li data-target="#imageCarousel" data-slide-to="2"></li>
+                <li data-target="#imageCarousel" data-slide-to="3"></li>
+            </ol>
+
+            <div class="carousel-inner">
+
+                <div class="item active">
+                    <img src="~/Image/final LOGO BIRDS.png" style="width :550PX;height :390PX " class="img-responsive">
+                </div>
+                <div class="item">
+                    <img src="~/Image/pets.png" style="width :550PX;height :390PX " class="img-responsive">
+                </div>
+                <div class="item">
+                    <img src="~/Image/final LOGO BIRDS.png" style="width :550PX;height :390PX " class="img-responsive">
+                </div>
+                <div class="item">
+                    <img src="~/Image/pets.png" style="width :550PX;height :390PX " class="img-responsive">
+                </div>
+            </div>
+
+
+            <a href="#imageCarousel" class="carousel-control dropup" data-slide="prev">
+                <span class="glyphicon glyphicon-hand-left"></span>
+            </a>
+            <a href="#imageCarousel" class="carousel-control right" data-slide="next">
+                <span class="glyphicon glyphicon-hand-right"></span>
+            </a>
+        </div>
+    </div>
+
+</div>
+
+<div class="row" style="background-color:orange;color:white">
+
+    <div class="col-md-1" style="color:white;margin:10PX;background-color:orange;border-radius:2PX;width:300px;height:350px">
+        <div id="imageCarousel" class="carousel dropup" data-interval="1500"
+             data-ride="carousel" data-pause="hover" data-wrap="true">
+
+            <div class="carousel-inner">
+                <div class="item active">
+                    <h3 style="color:darkslategrey">UserLogin</h3>
+                    <h4>Free For Users</h4>
+                </div>
+                <div class="item">
+                    <h3 style="color:darkslategrey">SellerLogin</h3>
+                    <h4>Subscribe To Sell</h4>
+                    <p style="color:white">
+                        To Add 250 Posts - Subscribe 250 Rs/-<br />
+                        To Add 500 Posts - Subscribe 500 Rs/-<br />
+                        To Add 1000 Posts - Subscribe 1000 Rs/-<br />
+                    </p>
+                    <input id="Submit1" type="submit" value="Subscribe" style="border:2px outset;border-color:orange;border-radius:10px;width:150px;height:30px;background-color:white;color :orange" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row" style="background-color:orange;color:white">
+    <div class="col-md-4" style="color:BLACK;margin:10PX;background-color:WHITE;border-radius:2PX;width:350px;height:350px">
+        <h3 style="color:darkslategrey">UserLogin</h3>
+        <h5>UserName</h5>
+        <input id="Text1" type="text" style="border:2px outset;border-color:orange;border-radius:10px;width:300px;height:30px" />
+        <br />
+        <br />
+        <h5>Password</h5>
+        <input id="Password1" type="password" style="border: 2px outset;
+        border-color: orange;
+        border-radius: 10px;width:300px;
+        height: 30px" />
+        <br /> <br /> <input id="Submit1" type="submit" value="Login" style="border:2px outset;border-color:orange;border-radius:10px;width:150px;height:30px;background-color:orange;color :white" />
+        <input id="Button1" type="button" value="Cancel" style="border:2px outset;border-color:orange;border-radius:10px;width:150px;height:30px;background-color:orange;color :white" />
+        <br /><br />  <a href="~/Controllers/PetsCategoriesController.cs">Forget Password</a>
+        <br />
+        <br />
+        <a href="~/Controllers/PetsController.cs">Create Account</a>
+        <br />
+        <br />
+    </div>
+    <div class="col-md-4" style="color:BLACK;margin:10PX;background-color:WHITE;border-radius:2PX;width:350px;height:350px">
+        <h3 style="color:darkslategrey">SellerLogin</h3>
+        <h5>UserName</h5>
+        <input id="Text1" type="text" style="border:2px outset;border-color:orange;border-radius:10px;width:300px;height:30px" />
+        <br />
+        <br />
+        <h5>Password</h5>
+        <input id="Password1" type="password" style="border: 2px outset;
+        border-color: orange;
+        border-radius: 10px;width:300px;
+        height: 30px" />
+        <br /> <br /> <input id="Submit1" type="submit" value="Login" style="border:2px outset;border-color:orange;border-radius:10px;width:150px;height:30px;background-color:orange;color :white" />
+        <input id="Button1" type="button" value="Cancel" style="border:2px outset;border-color:orange;border-radius:10px;width:150px;height:30px;background-color:orange;color :white" />
+        <br /><br />  <a href="~/Controllers/PetsCategoriesController.cs">Forget Password</a>
+        <br />
+        <br />
+        <a href="~/Controllers/PetsController.cs">Create Account</a>
+        <br />
+        <br />
+    </div>
+</div>

@@ -1,0 +1,18 @@
+﻿@model IEnumerable<SendenPets.Models.PetsCategories>
+    @using SendenPets.Models
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<div style="font-family :Cambria">
+    <h2>Pets List</h2>
+    <ul>
+        @foreach (PetsCategories petsCategories in @Model)
+        {
+            <li>
+                @Html.ActionLink(petsCategories.Pets_SubCategory , "Details", new { petsid = petsCategories .Pets_Id })
+            </li>
+        }
+    </ul>
+</div>
